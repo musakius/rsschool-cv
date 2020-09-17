@@ -88,7 +88,9 @@ header nav {
 header ul li a {
   color: #fff;
 }
-
+a:hover {
+  color: rgb(0, 9, 136);
+}
 a:after {
   position: absolute;
   bottom: 0px;
@@ -96,7 +98,7 @@ a:after {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #000;
+  background-color: rgb(0, 9, 136);
   transform: scale(0, 1);
   transform-origin: right top;
   transition: transform 0.3s ease-in-out;
@@ -104,6 +106,10 @@ a:after {
 
 header ul li a::after {
   background-color: #fff;
+}
+
+header ul li a:hover {
+  color: #fff;
 }
 
 a:hover::after {
